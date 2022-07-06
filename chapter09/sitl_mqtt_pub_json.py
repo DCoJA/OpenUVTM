@@ -31,7 +31,7 @@ def on_connect(client, userdata, flag, rc):
   print("Connected with result code " + str(rc))
 
 # ブローカーが切断したときの処理
-def on_disconnect(client, userdata, flag, rc):
+def on_disconnect(client, userdata, rc):
   if rc != 0:
      print("Unexpected disconnection.")
 

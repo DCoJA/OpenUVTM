@@ -9,7 +9,7 @@ def on_connect(client, userdata, flag, rc):
   client.subscribe("drone/001")  # subするトピックを設定 
 
 # ブローカーが切断したときの処理
-def on_disconnect(client, userdata, flag, rc):
+def on_disconnect(client, userdata, rc):
   if  rc != 0:
     print("Unexpected disconnection.")
 
